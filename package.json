@@ -1,35 +1,27 @@
- "version": "37.0.0",
-  "description": "CASTFABRIC V37 secure SaaS backend — PostgreSQL, auth, betalingen, rate limiting, gratis TTS via Edge",
+{
+  "name": "castr-backend",
+  "version": "37.0.0",
+  "description": "CASTR V37 secure backend — PostgreSQL, auth, betalingen, rate limiting, gratis TTS via Edge",
   "main": "server.js",
   "type": "commonjs",
   "scripts": {
     "start": "node server.js",
-    "dev": "node --watch server.js",
-    "db:up": "docker compose up -d",
-    "db:down": "docker compose down"
+    "dev": "node --watch server.js"
   },
   "dependencies": {
-    "bcrypt": "^5.1.1",
-    "cookie-parser": "^1.4.6",
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "express-rate-limit": "^7.3.1",
+    "cors": "^2.8.5",
     "helmet": "^7.1.0",
+    "express-rate-limit": "^7.3.1",
+    "bcrypt": "^5.1.1",
     "jsonwebtoken": "^9.0.2",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.4.5",
     "pg": "^8.12.0",
-    "sqlite": "^5.1.1",
-    "sqlite3": "^6.0.1",
     "stripe": "^16.2.0",
     "ws": "^8.18.0"
   },
   "engines": {
     "node": ">=18"
-  },
-  "allowScripts": {
-    "bcrypt@5.1.1": true,
-    "sqlite3@6.0.1": true
   }
 }
-{
-  "name": "castfabric-backend",
