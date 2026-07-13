@@ -23,7 +23,7 @@ const app = express();
 
 // ── DATABASE: SQLite (werkt altijd op Render) ─────────────────────
 // Gebruik /tmp/ op Render (beschrijfbaar) of lokale map
-let dbPath = process.env.DATABASE_URL || 'sqlite://castfabric.db';
+let dbPath = process.env.DATABASE_URL || 'sqlite:///tmp/castfabric.db';
 if (dbPath.startsWith('sqlite://')) {
   dbPath = dbPath.replace('sqlite://', '');
 }
